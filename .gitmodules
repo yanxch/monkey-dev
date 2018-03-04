@@ -1,0 +1,3 @@
+[submodule "themes/freelance"]
+	path = themes/freelance
+	url = https://github.com/digitalcraftsman/hugo-freelancer-theme.git
