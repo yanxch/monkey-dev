@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monkey Development</title>
-    <link>http://monkey-development.com/posts/javascript/</link>
+    <link>https://blog.monkey-development.com/posts/javascript/</link>
     <description>Recent content on Monkey Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://monkey-development.com/posts/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.monkey-development.com/posts/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

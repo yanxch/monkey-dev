@@ -1,4 +1,4 @@
-baseURL = "http://monkey-development.com/"
+baseURL = "https://blog.monkey-development.com/"
 languageCode = "en-us"
 title = "Monkey Development"
 theme = "freelance"

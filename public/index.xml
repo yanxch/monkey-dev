@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monkey Development</title>
-    <link>http://monkey-development.com/</link>
+    <link>https://blog.monkey-development.com/</link>
     <description>Recent content on Monkey Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Mar 2018 21:20:25 +0100</lastBuildDate>
     
-	<atom:link href="http://monkey-development.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.monkey-development.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Angular Components Pattern</title>
-      <link>http://monkey-development.com/posts/angular/component-based-pattern/</link>
+      <link>https://blog.monkey-development.com/posts/angular/component-based-pattern/</link>
       <pubDate>Sat, 03 Mar 2018 21:20:25 +0100</pubDate>
       
-      <guid>http://monkey-development.com/posts/angular/component-based-pattern/</guid>
+      <guid>https://blog.monkey-development.com/posts/angular/component-based-pattern/</guid>
       <description>Learn this in Javascript first post boom how long is one line here i dont know but lets find it out dajfd dasfd adsfdf fds f first post boom how long is one line here i dont know but lets find it out dajfd dasfd adsfdf fds f</description>
     </item>
     
