@@ -3,13 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.monkey-development.com/posts/angular/component-based-pattern/</loc>
-    <lastmod>2018-03-03T21:20:25+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.monkey-development.com/posts/angular/</loc>
-    <lastmod>2018-03-03T21:20:25+01:00</lastmod>
   </url>
   
   <url>
@@ -27,7 +21,6 @@
   
   <url>
     <loc>https://blog.monkey-development.com/</loc>
-    <lastmod>2018-03-03T21:20:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
