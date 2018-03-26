@@ -2,6 +2,8 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
         {{ partial "head.html" . }}
+        {{ partial "js.html" . }}
+
     </head>
     <body id="page-top" class="index">
 
@@ -11,8 +13,7 @@
 
         {{ block "main" . }}
         {{ end }}
-        
-        {{ partial "js.html" . }}
+
 
     </body>
 </html>

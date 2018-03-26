@@ -9,6 +9,8 @@
 <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
 {{ "<!-- Custom CSS -->" | safeHTML }}
 <link href="{{ .Site.BaseURL }}css/freelancer.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}css/prism-solarizedlight.css" rel="stylesheet">
+
 {{ range .Site.Params.custom_css }}
 <link rel="stylesheet" href="{{ . | absURL }}">
 {{ end }}
@@ -22,3 +24,4 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 {{ "<![endif]-->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/prism.js"></script>

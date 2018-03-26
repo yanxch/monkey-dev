@@ -1,3 +1,6 @@
 {{ range .Site.Params.custom_js }}
-<script src="{{ . | absURL }}"></script>
+
+<script src="{{ .Site.BaseURL }}js/prism.js"></script>
+
+<!--script src="{{ . | absURL }}"></script-->
 {{ end }}
