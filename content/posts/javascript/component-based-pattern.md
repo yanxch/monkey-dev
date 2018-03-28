@@ -11,13 +11,24 @@ matters. If your coming from an OOP language like Java or C# you most likely be 
 about this dynamic beeing of `this` in JavaScript. Lets demistify it a bit.
 
 ### 1. Function is called with `new`
-```javascript
+
+
+
+
+### 2. Function is called with `apply` / `call`
+
+
+<div>
+  <img src="/img/mac1.png" height="20px" style="user-select: text;position:  relative;top: 33px;">
+  <pre>
+    <code class="language-javascript">
 if (isAwesome){
   return true
-}
-```
-### 2. Function is called with `apply` / `call`
+}</code></pre>
+</div>
+
 ### 3. Function is called within an object
 ### 4. Normal function call
 
 
+matters. If your coming from an OOP language like Java or C# you most likely be confused
