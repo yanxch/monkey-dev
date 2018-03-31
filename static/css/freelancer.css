@@ -3,6 +3,10 @@
   border-color: transparent;
 }
 
+.codeblock {
+  margin-top: -30px;
+}
+
 code {
   color: #2c3e50;
 }
