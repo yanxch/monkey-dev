@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
+        
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +27,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <script src="https://blog.monkey-development.com/js/prism.js"></script>
+
+        
+
 
     </head>
     <body id="page-top" class="index">
@@ -82,35 +86,114 @@
 </header>
 
 
-        <section id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <a href="/posts/angular" class="portfolio-link">
-            <h1>Angular</h1>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <a href="/posts/java" class="portfolio-link">
-            <h1>Java</h1>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <a href="/posts/javascript" class="portfolio-link">
-            <h1>JavaScript</h1>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
         
+
+    <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-12">
+                            
+
+<h1 id="learn-this-in-javascript">Learn this in Javascript</h1>
+
+<p>There are four rules that help us determining the <code>this</code> object. The order of the rule
+matters. If your coming from an OOP language like Java or C# you most likely be confused
+about this dynamic behaviour of <code>this</code> in JavaScript. So lets demistify it a bit.</p>
+
+<h3 id="1-function-is-called-with-new">1. Function is called with <code>new</code></h3>
+
+<p>When a function is called with the <code>new</code> keyword then the <code>this</code> object inside of the function is the newly created object.</p>
+
+<div class="codeblock">
+  <img src="/img/mac1.png" height="20px" style="user-select: text;position:  relative;top: 33px;">
+  <pre>
+    <code class="language-javascript">
+function Note(name, text) {
+  this.name = name;
+  this.text = text;
+}
+
+var note = new Note('My first note', 'I have to learn Javascript');
+
+console.log(note.name); // My first note</code></pre>
+</div>
+
+<p><br />
+</p>
+
+<h3 id="2-function-is-called-with-apply-call">2. Function is called with <code>apply</code> / <code>call</code></h3>
+
+<p>When a function is called with <code>call</code>or <code>apply</code> the <code>this</code> object is the object that is specified as first function argument.</p>
+
+<div class="codeblock">
+  <img src="/img/mac1.png" height="20px" style="user-select: text;position:  relative;top: 33px;">
+  <pre>
+    <code class="language-javascript">
+function Note(name, text) {
+  this.name = name;
+  this.text = text;
+}
+
+var my_this_object = {};
+var note = Note.call(my_this_object, 'My first note', 'I have to learn Javascript');
+
+console.log(my_this_object.name); // My first note 
+console.log(note.name); // undefined</code></pre>
+</div>
+
+<p><br />
+</p>
+
+<h3 id="3-function-is-called-within-an-object">3. Function is called within an object</h3>
+
+<p>When a function is called from an containing object, then the containing object is the <code>this</code>object within the function</p>
+
+<div class="codeblock">
+  <img src="/img/mac1.png" height="20px" style="user-select: text;position:  relative;top: 33px;">
+  <pre>
+    <code class="language-javascript">
+function Note(name, text) {
+  this.name = name;
+  this.text = text;
+  this.toString = function() {
+    return this.name + ', ' + this.text;
+  }
+}
+
+var note = new Note('My first note', 'I have to learn Javascript');
+
+console.log(note.toString()); // My first note, I have to learn JavaScript</code></pre>
+</div>
+
+<p><br />
+</p>
+
+<h3 id="4-normal-function-call">4. Normal function call</h3>
+
+<p>When a function is called the <code>this</code>object is the scope from where the function is called.</p>
+
+<div class="codeblock">
+  <img src="/img/mac1.png" height="20px" style="user-select: text;position:  relative;top: 33px;">
+  <pre>
+    <code class="language-javascript">
+var name = 'Chris';
+
+setNameOfCurrentNote('Michael'); // Function call uses current scope as this
+
+function setNameOfCurrentNote(name) {
+  this.name = name; 
+}
+
+console.log(name); // Herbert</code></pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
 
     </body>

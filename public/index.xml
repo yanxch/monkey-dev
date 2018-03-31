@@ -6,19 +6,28 @@
     <description>Recent content on Monkey Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Mar 2018 21:20:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 10 Mar 2016 21:20:25 +0100</lastBuildDate>
     
 	<atom:link href="https://blog.monkey-development.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JavaScript This Explained</title>
-      <link>https://blog.monkey-development.com/posts/javascript/component-based-pattern/</link>
-      <pubDate>Sat, 03 Mar 2018 21:20:25 +0100</pubDate>
+      <link>https://blog.monkey-development.com/posts/javascript/javascript-this/</link>
+      <pubDate>Thu, 10 Mar 2016 21:20:25 +0100</pubDate>
       
-      <guid>https://blog.monkey-development.com/posts/javascript/component-based-pattern/</guid>
-      <description>Learn this in Javascript There are four rules that help us determining the this object. The order of the rule matters. If your coming from an OOP language like Java or C# you most likely be confused about this dynamic beeing of this in JavaScript. Lets demistify it a bit.
-1. Function is called with new if (isAwesome){ return true }  2. Function is called with apply / call 3.</description>
+      <guid>https://blog.monkey-development.com/posts/javascript/javascript-this/</guid>
+      <description>Learn this in Javascript There are four rules that help us determining the this object. The order of the rule matters. If your coming from an OOP language like Java or C# you most likely be confused about this dynamic behaviour of this in JavaScript. So lets demistify it a bit.
+1. Function is called with new When a function is called with the new keyword then the this object inside of the function is the newly created object.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.monkey-development.com/about/us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.monkey-development.com/about/us/</guid>
+      <description>&amp;nbsp; The Monkeys behind the scene made with</description>
     </item>
     
   </channel>
